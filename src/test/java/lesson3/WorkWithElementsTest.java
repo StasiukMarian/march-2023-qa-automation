@@ -1,17 +1,16 @@
-package lesson2;
+package lesson3;
 
 import base.config.BaseTest;
-import com.codeborne.selenide.*;
-import org.apache.commons.io.FileUtils;
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
@@ -23,7 +22,7 @@ public class WorkWithElementsTest extends BaseTest {
 //        Configuration.fileDownload = FileDownloadMode.FOLDER;
 //    }
 
-    public static String getFilePathByName (String fileName){
+    public static String getFilePathByName(String fileName) {
         return new File("src/main/resources/files/" + fileName).getAbsolutePath();
     }
 
@@ -85,6 +84,7 @@ public class WorkWithElementsTest extends BaseTest {
         for (String burgerMenuItem : burgerMenuItems) {
             System.out.println(burgerMenuItem);
         }
+
 //        $(By.xpath("//select[@class='product_sort_container']")).click();
 //
 //        List<String> filterOptionsTextsList = $$(By.xpath("//select[@class='product_sort_container']/option")).texts();

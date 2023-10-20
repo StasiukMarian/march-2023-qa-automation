@@ -1,6 +1,7 @@
 package lesson1;
 
 import base.config.BaseTest;
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeSuite;
@@ -12,7 +13,6 @@ public class FirstTest extends BaseTest {
 
     @Test()
     public void firstTest(){
-
     }
 
 //    @Test(dependsOnMethods = "firstTest", alwaysRun = true)
