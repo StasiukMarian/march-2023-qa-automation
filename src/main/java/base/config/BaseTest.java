@@ -2,6 +2,7 @@ package base.config;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.*;
 
 public class BaseTest {
