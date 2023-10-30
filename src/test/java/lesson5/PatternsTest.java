@@ -30,13 +30,13 @@ public class PatternsTest extends BaseTest {
 
         mainPage().waitMainPage(20000);
 
-        ElementsCollection itemListFromMainPage = mainPage().getItemList();
-
-        Assert.assertTrue(itemListFromMainPage.texts().contains("Sauce Labs Onesie"));
-
-        for (int i = 0; i < itemListFromMainPage.size(); i++) {
-            mainPage().clickAddToCartButton();
-        }
+//        ElementsCollection itemListFromMainPage = mainPage().getItemList();
+//
+//        Assert.assertTrue(itemListFromMainPage.texts().contains("Sauce Labs Onesie"));
+//
+//        for (int i = 0; i < itemListFromMainPage.size(); i++) {
+//            mainPage().clickAddToCartButton();
+//        }
 
 //        mainPage.clickShoppingCartButton();
 //

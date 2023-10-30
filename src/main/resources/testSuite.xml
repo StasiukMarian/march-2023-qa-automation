@@ -3,7 +3,7 @@
 <suite name="testSuite1">
     <test name="lesson1 tests">
         <packages>
-            <package name="lesson1.*"/>
+            <package name="lesson7.*"/>
         </packages>
     </test>
 </suite>
