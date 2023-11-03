@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="testSuite1">
-    <test name="lesson1 tests">
+<suite name="testSuite">
+    <test name="Regression tests">
         <packages>
+            <package name="lesson5.*"/>
             <package name="lesson7.*"/>
         </packages>
     </test>
