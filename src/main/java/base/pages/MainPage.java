@@ -29,7 +29,7 @@ public class MainPage extends PageTools {
     private final SelenideElement linkedIn = $(By.xpath("//a[text()='LinkedIn']"));
 
     public void waitMainPage(int time) {
-        logo.shouldBe(Condition.visible, Duration.ofMillis(time));
+        logo.shouldBe(Condition.visible);
     }
 
     //    click methods

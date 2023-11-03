@@ -12,7 +12,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <selenide>6.17.1</selenide>
+        <selenide>5.15.0</selenide>
         <testng>6.14.3</testng>
         <org.sjf4j>1.7.25</org.sjf4j>
         <logback>1.2.3</logback>
