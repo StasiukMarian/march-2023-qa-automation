@@ -28,7 +28,7 @@ public class PatternsTest extends BaseTest {
         loginPage().typePassword(password);
         loginPage().clickLoginButton();
 
-        mainPage().waitMainPage(20000);
+        mainPage().waitMainPage();
 
 //        ElementsCollection itemListFromMainPage = mainPage().getItemList();
 //

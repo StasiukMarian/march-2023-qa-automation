@@ -17,7 +17,7 @@ public class DetailItemTest extends BaseTest {
         loginPage().typePassword("secret_sauce");
         loginPage().clickLoginButton();
 
-        mainPage().waitMainPage(1500);
+        mainPage().waitMainPage();
 
         List<Item> itemListFromMainPage = mainPage().getItemListFromMainPage();
 

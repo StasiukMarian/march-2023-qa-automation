@@ -20,7 +20,7 @@ public class ArgumentsTest extends BaseTest {
         loginPage().typePassword("secret_sauce");
         loginPage().clickLoginButton();
 
-        mainPage().waitMainPage(1500);
+        mainPage().waitMainPage();
 
         List<String> expectedList = new ArrayList<>();
 

@@ -59,7 +59,7 @@ public class ConditionTest extends BaseTest {
 //        $(By.xpath("//input[@type='submit']")).shouldBe(shouldBeClickable).click();
         $(By.xpath("//input[@type='submit']")).shouldBe(Condition.type("submit")).click();
 
-        $(By.xpath("//div[@class='app_logo']")).waitUntil(Condition.visible, 20000);
+        $(By.xpath("//div[@class='app_logo']")).shouldBe(Condition.visible);
         $(By.xpath("//div[@class='app_logo']")).shouldHave(Condition.exactText("swag labs"));
         $(By.xpath("//div[@class='app_logo']")).shouldHave(Condition.exactTextCaseSensitive("Swag Labs"));
         $(By.xpath("//div[@class='app_logo']")).shouldHave(Condition.text("swag"));

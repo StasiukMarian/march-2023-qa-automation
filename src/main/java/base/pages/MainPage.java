@@ -28,7 +28,7 @@ public class MainPage extends PageTools {
     private final SelenideElement twitter = $(By.xpath("//a[text()='Twitter']"));
     private final SelenideElement linkedIn = $(By.xpath("//a[text()='LinkedIn']"));
 
-    public void waitMainPage(int time) {
+    public void waitMainPage() {
         logo.shouldBe(Condition.visible);
     }
 
