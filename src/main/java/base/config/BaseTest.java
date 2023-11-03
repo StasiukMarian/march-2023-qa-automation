@@ -10,7 +10,8 @@ public class BaseTest {
     public void configuration() {
         Configuration.browser = "chrome";
         Configuration.browserSize = "1280x920";
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
+        Configuration.headless = true;
         Configuration.timeout = 10000;
         Configuration.pageLoadTimeout = 10000;
         Configuration.pageLoadStrategy = "normal";
