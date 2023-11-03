@@ -23,7 +23,7 @@ public class MainPage extends PageTools {
     private final By itemPrices = By.xpath("//div[@class='inventory_item_price']");
     private final SelenideElement addToCart = $(By.xpath("//button[text()='Add to cart']"));
     private final SelenideElement shoppingCartButton = $(By.xpath("//a[@class='shopping_cart_link']"));
-    private final SelenideElement burgerMenu = $(By.xpath("//button[@id='react-burger-menu-btn']"));
+    private final By burgerMenu = By.xpath("//button[@id='react-burger-menu-btn']");
     private final SelenideElement facebook = $(By.xpath("//a[text()='Facebook']"));
     private final SelenideElement twitter = $(By.xpath("//a[text()='Twitter']"));
     private final SelenideElement linkedIn = $(By.xpath("//a[text()='LinkedIn']"));
@@ -42,7 +42,7 @@ public class MainPage extends PageTools {
     }
 
     public void clickBurgerMenuButton() {
-        burgerMenu.shouldBe(Condition.and("clickable", Condition.visible, Condition.enabled)).click();
+        click(burgerMenu);
     }
 
     public void clickTwitterButton() {
