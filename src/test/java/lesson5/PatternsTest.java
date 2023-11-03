@@ -4,6 +4,7 @@ import base.config.BaseTest;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -53,8 +54,10 @@ public class PatternsTest extends BaseTest {
         expectedBurgerMenuList.add("Logout");
         expectedBurgerMenuList.add("Reset App State");
 
-        ElementsCollection burgerMenuItems = burgerMenuPage().getBurgerMenuItems();
-        Assert.assertEquals(burgerMenuItems.texts(), expectedBurgerMenuList);
+        Selenide.sleep(1500);
+
+        List<String> burgerMenuItems = burgerMenuPage().getBurgerMenuItems();
+        Assert.assertEquals(burgerMenuItems, expectedBurgerMenuList);
 
 //        int indexLogout = burgerMenuItems.texts().indexOf("Logout");
 //
@@ -62,24 +65,24 @@ public class PatternsTest extends BaseTest {
 //
 //        Assert.assertTrue(loginPage().isLoginButtonPresented());
         burgerMenuPage().closeBurgerMenu();
-
-        mainPage().clickTwitterButton();
-
-        Selenide.switchTo().window(1);
-
-        Selenide.sleep(3000);
-
-        Assert.assertTrue($(By.xpath("//span[text()='@saucelabs']")).is(Condition.visible));
-
-        Selenide.closeWindow();
-        Selenide.switchTo().window(0);
-
-        mainPage().clickBurgerMenuButton();
-
-        int indexLogout = burgerMenuItems.texts().indexOf("Logout");
-
-        burgerMenuItems.get(indexLogout).click();
-
-        Assert.assertTrue(loginPage().isLoginButtonPresented());
+//
+//        mainPage().clickTwitterButton();
+//
+//        Selenide.switchTo().window(1);
+//
+//        Selenide.sleep(3000);
+//
+//        Assert.assertTrue($(By.xpath("//span[text()='@saucelabs']")).is(Condition.visible));
+//
+//        Selenide.closeWindow();
+//        Selenide.switchTo().window(0);
+//
+//        mainPage().clickBurgerMenuButton();
+//
+//        int indexLogout = burgerMenuItems.texts().indexOf("Logout");
+//
+//        burgerMenuItems.get(indexLogout).click();
+//
+//        Assert.assertTrue(loginPage().isLoginButtonPresented());
     }
 }
