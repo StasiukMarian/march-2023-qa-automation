@@ -47,6 +47,7 @@ public class PageTools extends CustomLogger {
 
     protected void type(String text, By by, Object... args) {
         logInfo(getPreviousMethodNameAsText() + " 'element -> " + byLocator(by, args));
+        shouldBe(Condition.visible, by, args).clear();
         shouldBe(Condition.visible, by, args).append(text);
     }
 
