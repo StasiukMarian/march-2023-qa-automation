@@ -1,13 +1,13 @@
 package base.config;
 
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.*;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.*;
 
 public class BaseTest {
     @BeforeClass(alwaysRun = true)
     public void configuration() {
+//        System.setProperty("webdriver.chrome.driver", "src/main/resources/files/chromedriver.exe");
         Configuration.browser = "chrome";
         Configuration.browserSize = "1280x920";
         Configuration.holdBrowserOpen = false;
