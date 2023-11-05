@@ -9,7 +9,6 @@ import org.testng.annotations.*;
 public class BaseTest {
     @BeforeClass(alwaysRun = true)
     public void configuration() {
-//        System.setProperty("webdriver.chrome.driver", "src/main/resources/files/chromedriver.exe");
         Configuration.browser = "chrome";
         Configuration.browserSize = "1280x920";
         Configuration.holdBrowserOpen = false;
@@ -19,12 +18,9 @@ public class BaseTest {
         Configuration.pageLoadStrategy = "normal";
         Configuration.screenshots = true;
         Configuration.savePageSource = false;
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
                 .screenshots(true)
                 .savePageSource(false));
-
     }
 
     @BeforeMethod
@@ -38,13 +34,13 @@ public class BaseTest {
 
     @AfterMethod(alwaysRun = true)
     public void cleanWebDrive() {
-//        Selenide.clearBrowserCookies();
-//        Selenide.refresh();
-//        Selenide.open("about:blank");
+        Selenide.clearBrowserCookies();
+        Selenide.refresh();
+        Selenide.open("about:blank");
     }
 
     @AfterClass
     public void tearDown() {
-//        Selenide.closeWebDriver();
+        Selenide.closeWebDriver();
     }
 }
