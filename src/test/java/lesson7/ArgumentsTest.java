@@ -32,7 +32,7 @@ public class ArgumentsTest extends BaseTest {
 
         Assert.assertEquals(mainPage().getHeaderByID(5), "Sauce Labs Onesie");
 
-        mainPage().clickElementByHeaderName("Sauce Labs Onesie");
+        mainPage().clickElementByHeaderName("Sauce Labs Onesi");
 //        mainPage().getItemByID(3).click();
 
         System.out.println(expectedList);

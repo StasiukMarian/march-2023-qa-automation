@@ -1,6 +1,8 @@
 package base.config;
 
 import com.codeborne.selenide.*;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.*;
 
@@ -17,6 +19,12 @@ public class BaseTest {
         Configuration.pageLoadStrategy = "normal";
         Configuration.screenshots = true;
         Configuration.savePageSource = false;
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
+                .screenshots(true)
+                .savePageSource(false));
+
     }
 
     @BeforeMethod
