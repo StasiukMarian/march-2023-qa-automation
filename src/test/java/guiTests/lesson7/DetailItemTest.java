@@ -1,4 +1,4 @@
-package lesson7;
+package guiTests.lesson7;
 
 import base.config.BaseTest;
 import base.pages.Item;

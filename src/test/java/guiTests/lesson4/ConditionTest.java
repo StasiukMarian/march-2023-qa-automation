@@ -1,4 +1,4 @@
-package lesson4;
+package guiTests.lesson4;
 
 import base.config.BaseTest;
 import com.codeborne.selenide.*;
@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 

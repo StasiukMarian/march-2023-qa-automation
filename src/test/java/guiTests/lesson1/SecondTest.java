@@ -1,4 +1,4 @@
-package lesson1;
+package guiTests.lesson1;
 
 import base.config.BaseTest;
 import org.testng.annotations.Test;

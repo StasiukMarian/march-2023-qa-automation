@@ -3,8 +3,8 @@
 <suite name="testSuite">
     <test name="Regression tests">
         <packages>
-            <package name="lesson5.*"/>
-            <package name="lesson7.*"/>
+            <package name="guiTests.lesson5.*"/>
+            <package name="guiTests.lesson7.*"/>
         </packages>
     </test>
 </suite>

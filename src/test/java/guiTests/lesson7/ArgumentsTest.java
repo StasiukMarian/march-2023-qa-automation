@@ -1,4 +1,4 @@
-package lesson7;
+package guiTests.lesson7;
 
 import base.config.BaseTest;
 import com.codeborne.selenide.SelenideElement;
@@ -6,7 +6,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static base.Pages.loginPage;

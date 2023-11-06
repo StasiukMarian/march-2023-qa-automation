@@ -29,6 +29,7 @@ public class BaseTest {
         // https://ps.uci.edu/~franklin/doc/file_upload.html - URL TO UPLOAD FILE
         // https://checkcps.com/double-click/ - URL TO DOUBLE CLICK
         // https://faculty.washington.edu/chudler/java/boxes.html - URL WITH CHECKBOXES
+        // https://petstore.swagger.io/v2/pet/findByStatus?status=available - pet api
         Selenide.open("https://www.saucedemo.com/");
     }
 
