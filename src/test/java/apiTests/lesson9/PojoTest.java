@@ -18,7 +18,7 @@ import static io.restassured.RestAssured.*;
 public class PojoTest {
     public static final String BASE_URL = "https://reqres.in/";
 
-    //    @Test
+    @Test
     public void getUsers() {
         getSpecifications(requestSpecification(BASE_URL), responseSpecification(200));
         List<GetUserData> usersList = given()
@@ -44,7 +44,7 @@ public class PojoTest {
         }
     }
 
-    //    @Test
+    @Test
     public void createUser() {
         getSpecifications(requestSpecification(BASE_URL), responseSpecification(201));
 
@@ -66,7 +66,7 @@ public class PojoTest {
         Assert.assertEquals(request.getJob(), createUserResponse.getJob());
     }
 
-//    @Test
+    @Test
     public void updateUser() {
         getSpecifications(requestSpecification(BASE_URL), responseSpecification(200));
 
@@ -85,7 +85,7 @@ public class PojoTest {
     }
 
     @Test
-    public void getPetTest(){
+    public void getPetTest() {
         getSpecifications(requestSpecification(BASE_URL), responseSpecification(200));
 
         Pet[] responsePet = given()
